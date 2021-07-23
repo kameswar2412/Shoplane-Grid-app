@@ -13,9 +13,7 @@ class Header extends Component {
     }
   }
 
-  handleSearch=(value)=>{
-console.log(value)
-  }
+ 
     
     render(){
         return ( 
@@ -43,7 +41,7 @@ console.log(value)
           <a className="nav-link disabled" href=" # "  aria-disabled="true">cart</a>
         </li>
       </ul>
-      <Searchbox  onSearchValue={this.handleSearch} />
+      <Searchbox  />
     </div>
   </div>
 </nav>

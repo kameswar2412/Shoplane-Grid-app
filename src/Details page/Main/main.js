@@ -9,14 +9,14 @@ constructor(props){
         product:[],
 
         loader:true,
-        otherData:[]
+       
     }
 }
 
 componentDidMount(){
     axios.get("https://5d76bf96515d1a0014085cf9.mockapi.io/product")
     .then((res)=> 
-    this.setState({product:res.data,loader:false,otherData:res.data}))
+    this.setState({product:res.data,loader:false}))
 }
 
     render(){
